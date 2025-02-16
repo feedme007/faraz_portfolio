@@ -4,22 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Events - Mentor Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="images/ns.png" rel="icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="images/MS.svg" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  >
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -33,6 +35,33 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Custom Hover Styles -->
+  <style>
+    /* Zoom effect on card image */
+    .card-hover-zoom .card-img img {
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    .card-hover-zoom:hover .card-img img {
+      transform: scale(1.05);
+    }
+
+    /* Subtle text color change on hover for the card title */
+    .card-hover-zoom .card-title a {
+      transition: color 0.3s ease;
+      font-weight: 600;
+    }
+    .card-hover-zoom:hover .card-title a {
+      color: #198754; /* Bootstrap 'success' green, adjust if needed */
+    }
+    .card-img img {
+      height: 350px; /* Set to your desired height */
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+  </style>
 
   <script src="https://kit.fontawesome.com/fc24bb1a80.js" crossorigin="anonymous"></script>
 </head>
@@ -42,30 +71,17 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">Nimra Siddiqui</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+      <h1 class="logo me-auto"><a href="index.html">Mohammad Faraz Idris Siddiqui</a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="education.html">Education</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="works.html">Works</a></li>
           <li><a class="experience" href="experience.html">Experience</a></li>
           <li><a href="contact-me.html">Contact me</a></li>
-
-          </li>
-
         </ul>
-
         <i class="bi bi-list mobile-nav-toggle"></i>
-
-
-
-
-
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
@@ -75,7 +91,7 @@
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
         <h2>Experience</h2>
-        <p>Journey of my experiences </p>
+        <p>Journey of my experiences</p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -83,85 +99,213 @@
     <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
+        <!-- Row 1 -->
+        <div class="row mb-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/western_uni.jpg" alt="AI-Driven Mobility" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Research Intern - AI-Driven Mobility &amp; Transport Optimization (World's Top 1% University)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">09/2024 – Current</p>
+                <p class="fst-italic text-center">Western University, London, Canada</p>
+                <ul>
+                  <p>Predictive Model for Forecasting Subway Delays (Currently working)</p>
+                  <li>Developing a predictive AI model to forecast subway delays using real-time Toronto subway data &amp; Google Maps API.</li>
+                  <li>Designed visualizations for dynamic passenger flow, occupancy &amp; crowd analysis to aid transit optimization.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/canada.jpg" alt="Agent-Based Simulation" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Summer Research Intern – Agent-Based Simulation for Urban Transit (MITACS GRI)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">06/2024 – 08/2024</p>
+                <p class="fst-italic text-center">Western University, London, Canada</p>
+                <ul>
+                  <p>Development of an Agent-Based Simulation Model and Advanced Data Visualization</p>
+                  <li>Built an agent-based simulation model for urban transit monitoring in cities like Beijing, London, and Toronto.</li>
+                  <li>Analyzed passenger behavior and system changes increasing decision-making speed by 32%.</li>
+                  <li>Simulated complex transit network dynamics to optimize operations and infrastructure utilization.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Row 1 -->
+
+        <!-- Row 2 -->
+        <div class="row mb-4">
+          <!-- Card 3 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/jamia1.jpg" alt="Traffic Congestion Management" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Research Intern – Data-Driven Traffic Congestion Management (India’s 3rd-ranked University)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">02/2023 – 06/2024</p>
+                <p class="fst-italic text-center">Jamia Millia Islamia, New Delhi, India</p>
+                <ul>
+                  <p>Social Media Crowdsourcing for Traffic Congestion Management</p>
+                  <li>Developed a syntactical geocoder to map congestion-related tweets to routes instead of isolated points.</li>
+                  <li>Utilized network centrality measures to optimize urban traffic flow, enhancing peak-time efficiency by 20%.</li>
+                  <li>Leveraged machine learning, resulting in more accurate traffic predictions for New Delhi’s traffic management.</li>
+                  <li>Presented policy-relevant insights at CSIR-CRRI and paper under review at a Taylor &amp; Francis Journal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/malaysia.webp" alt="Guest Lecturer" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Guest Lecturer - AI Applications in Sustainable Systems (Asia’s Top 2% University)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">10/2023 – 10/2023</p>
+                <p class="fst-italic text-center">Universiti Tenaga Nasional, Putrajaya, Malaysia</p>
+                <ul>
+                  <p>Ethical AI for Next Generation Technologies</p>
+                  <li>Collaborated with Dr. Lim Kok Cheng and UNITEN faculty to promote ethical AI practices in academia and industry.</li>
+                  <li>Delivered lectures on “Green Computing: AI at Scale” &amp; “AI for Real-World” to UNITEN students and global attendees.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Row 2 -->
+
+        <!-- Row 3 -->
+        <div class="row mb-4">
+          <!-- Card 5 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/crri.jpg" alt="Traffic Flow Optimization" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Summer Research Intern - Traffic Flow Optimization &amp; Simulation (61st-ranked govt. institution worldwide)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">08/2023 – 10/2023</p>
+                <p class="fst-italic text-center">CSIR - CRRI, New Delhi, India</p>
+                <ul>
+                  <p>Traffic Simulation and Technology-Driven Solutions for Traffic Management at Shalimar Chowk, Delhi</p>
+                  <li>Modeled and simulated roundabout designs at Shalimar Chowk, Delhi, using SUMO software to optimize traffic flow.</li>
+                  <li>Evaluated traffic scenarios and optimized lanes, signals, and roundabout impacts using AI-driven simulations.</li>
+                  <li>Published paper in an international journal (IF=8.226), resulting in a projected 25% reduction in congestion.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card card-hover-zoom">
+              <div class="card-img">
+                <!-- Replace with relevant image -->
+                <img src="internship/jamia2.avif" alt="Healthcare Analytics" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    Research Intern - Deep Learning for Healthcare Analytics (India’s 3rd-ranked University)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">02/2023 – 08/2023</p>
+                <p class="fst-italic text-center">Jamia Millia Islamia, New Delhi, India</p>
+                <ul>
+                  <p>An Efficient Heart Disease Detection Using Customized Deep Learning Network</p>
+                  <li>Built 1D-CNN and LSTM models to predict heart disease using key health indicators.</li>
+                  <li>Optimized deep learning models through hyperparameter tuning, achieving 99.02% accuracy and a ROC-AUC of 99%.</li>
+                  <li>Paper under review at an Elsevier journal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Row 3 -->
+
+        <!-- Row 4: TEACHING AND EXTRACURRICULAR ACTIVITIES -->
+        <h3 class="mb-4" style="text-align: center;">TEACHING AND EXTRACURRICULAR ACTIVITIES</h3>
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
+          <!-- Card 7 -->
+          <div class="col-md-6 d-flex align-items-stretch mb-4">
+            <div class="card card-hover-zoom">
               <div class="card-img">
-                <img src="images/gra_cs.png" alt="...">
+                <!-- Replace with relevant image -->
+                <img src="internship/chegg.webp" alt="Chegg India" class="img-fluid">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Graduate Reasearch Assistant</a></h5>
-                <p class="fst-italic text-center">Sept 2022 – Present</p>
-                <p class="fst-italic text-center">Department of Computer Science, Youngstown, OH, USA </p>
-                <p class="card-text">Increased the efficacy of the Self-Driving Car System project by 93% through C# and
-                  Unity modifications. Adapted A* algorithms to maintain
-                  autonomous vehicles within the simulated environment continuously, preventing congestion without the
-                  need for spawning.</p>
-                <p class="card-text">Initiated the project by collecting data, recognizing the absence of available
-                  resources online. Went beyond expectations by sourcing student
-                  data, modifying, and generating a substantial dataset crucial for project development.</p>
-                <p class="card-text">Developed Dr. Lego," website an innovative AI tutor, utilizing advanced deep
-                  learning algorithms to analyze and evaluate code. Resulted in a
-                  significant 30% reduction in SPIKE Prime coding errors and provided immediate student support.
-                  Leveraged the Ohio Supercomputer for efficient model training, ensuring optimal performance.</p>
-                <p class="card-text">Implemented a code quality scoring system to evaluate student work, fostering a
-                  positive coding culture and driving a 16% increase in student
-                  engagement and skill enhancement. </p>
-                <p class="card-text">And to provide them with computer programming education </p>
-                <p class="card-text">To conduct research work related to computer programming </p>
+                <h5 class="card-title">
+                  <a href="">
+                    Subject Expert
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">05/2022 – Current</p>
+                <p class="fst-italic text-center">Chegg India Private Limited, New Delhi, India</p>
+                <ul>
+                  <li>Assisted 500+ students globally with solutions to undergraduate-level questions in Mathematics &amp; Chemistry.</li>
+                  <li>Provided detailed step-by-step explanations, ensuring clarity and conceptual understanding for diverse learners.</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
+
+          <!-- Card 8 -->
+          <div class="col-md-6 d-flex align-items-stretch mb-4">
+            <div class="card card-hover-zoom">
               <div class="card-img">
-                <img src="images/GRA-EE.jpg" alt="...">
+                <!-- Replace with relevant image -->
+                <img src="internship/byjus.webp" alt="Byju's" class="img-fluid">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">AI/ML Intern</a></h5>
-                <p class="fst-italic text-center">Jan 2022 – March 2022</p>
-                <p class="fst-italic text-center">ElementOne NJ, USA</p>
-                <p class="card-text">Gathered a large amount of data to successfully design and develop a personalized
-                  AI-powered chatbot used Python, resulting in a 38%
-                  increase in customer satisfaction by providing instant results and eliminating delays. </p>
-                <p class="card-text"> Enhanced customer engagement by 10% by tailoring services to specific ethnic and
-                  faith-related preferences, effectively addressing the
-                  unique needs of diverse customers </p>
-                <p>Implemented advanced Natural Language Processing (NLP) techniques, resulting in a 25% improvement in
-                  chatbot accuracy and
-                  responsiveness. </p>
-                <p>Collaborated with stakeholders and team members to align chatbot functionalities with unique customer
-                  management and data needs,fostering synergy and an efficient workflow. </p>
-
+                <h5 class="card-title">
+                  <a href="">
+                    Academic Specialist (India’s #1 EdTech Company)
+                  </a>
+                </h5>
+                <p class="fst-italic text-center">03/2022 – 10/2022</p>
+                <p class="fst-italic text-center">Byju’s, Think &amp; Learn Pvt. Ltd., New Delhi, India</p>
+                <ul>
+                  <li>Managed 4 classes of 40 students each, teaching Mathematics and Science to improve conceptual understanding.</li>
+                  <li>Guided students individually to address doubts and enhance their performance in assessments.</li>
+                </ul>
               </div>
             </div>
-
           </div>
-        </div>
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="card">
-            <div class="card-img">
-              <img src="images/intern.jpeg" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Machine Learning Engineer</a></h5>
-              <p class="fst-italic text-center">b4S Solutions Pvt. Ltd., India & Malaysia </p>
-              <p class="fst-italic text-center"> Nov 2018 – May 2021 </p>
-              <p class="card-text">Developed and deployed machine learning models to predict customer churn and optimize
-                network performance, resulting in a 15% reduction
-                in churn rates and improved service quality. </p>
-              <p class="card-text">Built and managed data pipelines using AWS S3 and Redshift to integrate telecom data
-                from various sources, enhancing data usability by 20%. </p>
-              <p class="card-text">Created and maintained PostgreSQL databases and data models, reducing response times
-                by 25% and improving data retrieval efficiency for
-                machine learning applications.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
+        </div><!-- End Row 4 -->
 
       </div>
     </section><!-- End Events Section -->
@@ -174,44 +318,33 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-
-
-
-
-
-
+          <!-- Additional footer content if needed -->
         </div>
       </div>
     </div>
 
     <div class="container d-md-flex py-4">
-
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Made <strong><span>by</span></strong> Nimra Siddiqui
+          &copy; Made <strong><span>by</span></strong> Mohammad Faraz Idris Siddiqui
         </div>
         <div class="credits">
-
-
+          <!-- Additional credits can go here -->
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-
-        <a href="mailto:nimraidris7@gmail.com" target="_blank" class="icon-button" class="Gmail"><i
-            class="fab fa-google"></i></a>
-        <a href="https://github.com/nimrausa" target="_blank" class="Github"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nimraidris/" target="_blank" class="icon-button" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/nimra_idris/?next=%2F" target="_blank" class="icon-button"
-          class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
+        <a href="mailto:farazir786@gmail.com" target="_blank" class="icon-button"><i class="fab fa-google"></i></a>
+        <a href="https://github.com/feedme007" target="_blank" class="icon-button"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mohammad-faraz-idris-siddiqui-567683243/" target="_blank" class="icon-button"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/faraz_idris/?next=%2F" target="_blank" class="icon-button"><i class="bx bxl-instagram"></i></a>
+      </div> 
     </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -219,10 +352,8 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
